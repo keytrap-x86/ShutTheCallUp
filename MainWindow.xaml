@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ShutTheCallUp"
         xmlns:tb="http://www.hardcodet.net/taskbar" AllowsTransparency="True" 
-        mc:Ignorable="d" Height="0" Width="0" ResizeMode="NoResize" ShowInTaskbar="False" WindowState="Minimized" WindowStyle="None" >
+        mc:Ignorable="d" Height="1" Width="1" ResizeMode="NoResize" ShowInTaskbar="False" WindowState="Minimized" WindowStyle="None" Closed="MainWindow_OnClosed" >
 
     <tb:TaskbarIcon x:Name="myNotifyIcon"
                     Visibility="Visible"

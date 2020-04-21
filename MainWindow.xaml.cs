@@ -16,6 +16,7 @@ namespace ShutTheCallUp
         public MainWindow()
         {
             InitializeComponent();
+            Hide();
             _globalKeyboardHook = new GlobalKeyboardHook(new[] { Keys.Oem7 });
             _globalKeyboardHook.KeyboardPressed += OnKeyPressed;
         }
@@ -41,8 +42,14 @@ namespace ShutTheCallUp
 
         private void MyNotifyIcon_OnTrayMouseDoubleClick(object sender, RoutedEventArgs e)
         {
+            Close();
+            
+        }
+
+        private void MainWindow_OnClosed(object sender, EventArgs e)
+        {
             _globalKeyboardHook?.Dispose();
-            Environment.Exit(0);
+            
         }
     }
 }
