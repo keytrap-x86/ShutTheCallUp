@@ -35,7 +35,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>icons8-call-of-duty-modern-warfare-64.ico</ApplicationIcon>
+    <ApplicationIcon>icons8-call-of-duty-modern-warfare-64 %281%29.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Hardcodet.Wpf.TaskbarNotification, Version=1.0.5.0, Culture=neutral, processorArchitecture=MSIL">
@@ -106,6 +106,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="icons8-call-of-duty-modern-warfare-64.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons8-call-of-duty-modern-warfare-64 %281%29.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
