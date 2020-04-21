@@ -1,0 +1,15 @@
+﻿<Window x:Class="ShutTheCallUp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ShutTheCallUp"
+        xmlns:tb="http://www.hardcodet.net/taskbar" AllowsTransparency="True" 
+        mc:Ignorable="d" Height="0" Width="0" ResizeMode="NoResize" ShowInTaskbar="False" WindowState="Minimized" WindowStyle="None" >
+
+    <tb:TaskbarIcon x:Name="myNotifyIcon"
+                    Visibility="Visible"
+                    IconSource="icons8-call-of-duty-modern-warfare-64.ico"
+                    TrayMouseDoubleClick="MyNotifyIcon_OnTrayMouseDoubleClick"
+    />
+</Window>
